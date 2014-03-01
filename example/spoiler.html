@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CKEditor Spoiker</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/spoiler.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/ckeditor/ckeditor.js"></script>
+		<script src="js/ckeditor/adapters/jquery.js"></script>
+		<script src="js/spoiler.js"></script>
+		<script>
+		$(function() {
+			$('#editor').ckeditor();
+			$('#send').click(function() {
+				var text = $('#editor').val();
+				$('div.page').html(text);
+				$('div.spoiler-title').click(function() {
+					$(this)
+						.toggleClass('show-icon')
+						.toggleClass('hide-icon')
+						.parent().children().last().toggle();
+				});
+			});
+		});
+		</script>
+		<style>
+		body {
+			font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+		}
+		div.page {
+			width: 100%;
+			height: 200px;
+			border: 1px solid #999;
+			overflow: auto;
+			padding: 5px;
+		}
+		</style>
+	</head>
+	<body>
+		<h2>CKEditor Spoiler Example</h2>
+		<textarea id="editor"></textarea>
+		<br><button id="send" type="button">Submit</button>
+		<h2>On page</h2>
+		<div class="page">
+		</div>
+	</body>
+</html>
