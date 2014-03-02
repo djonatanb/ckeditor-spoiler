@@ -40,7 +40,7 @@ CKEDITOR.plugins.add( 'spoiler' , {
 
 		function createSpoiler() {
 			var spoilerContainer = editor.document.createElement( 'div', { attributes: { class: 'spoiler' } } );
-			var spoilerToggle = editor.document.createElement( 'div', { attributes: { class: 'spoiler-toggle show-icon' } } );
+			var spoilerToggle = editor.document.createElement( 'div', { attributes: { class: 'spoiler-toggle hide-icon' } } );
 			var spoilerTitle = editor.document.createElement( 'div', { attributes: { class: 'spoiler-title' } } );
 			var spoilerContent = editor.document.createElement( 'div', { attributes: { class: 'spoiler-content' } } );
 			spoilerToggle.on( 'click', function( event ) {
@@ -74,7 +74,7 @@ CKEDITOR.plugins.add( 'spoiler' , {
 				var spoiler = createSpoiler();
 				editor.insertElement( spoiler );
 			},
-			allowedContent: 'div(*);br'
+			allowedContent: 'div{*}(*);br'
 		});
 
 		editor.ui.addButton( 'Spoiler', {
