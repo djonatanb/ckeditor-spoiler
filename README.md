@@ -7,7 +7,7 @@ Plugin add spoiler to CKEditor. Testing on CKEditor 4.3.3.
 
  - Copy the plugin into the `plugins` folder of your CKEditor installation:
 
-		http://example.com/ckeditor/plugins/inlinesave
+		http://example.com/ckeditor/plugins/spoiler
 
  - Enable the plugin by using the extraPlugins configuration setting:
 
