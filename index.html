@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CKEditor Spoiler</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/spoiler.css">
+		<link rel="stylesheet" href="css/demo.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery-ui-1.10.4.min.js"></script>
+		<script src="js/ckeditor/ckeditor.js"></script>
+		<script src="js/ckeditor/adapters/jquery.js"></script>
+		<script src="js/spoiler.js"></script>
+		<script src="js/demo.js"></script>
+	</head>
+	<body>
+	<div id="tabs">
+		<div class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-brand">CKESpoiler</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#demo">Demo</a></li>
+						<li><a href="#getting-started">Getting started</a></li>
+						<li><a href="#links">Links</a></li>
+					</ul>
+					<p class="navbar-text navbar-right">Plugin add spoiler to CKEditor</p>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+		<div class="container">
+			<div id="demo">
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Editor</h4>
+						<textarea id="editor">
+							<p>
+								<strong>Spoiler example:</strong>
+							</p>
+							<div class="spoiler">
+								<div class="spoiler-title">
+									<div class="spoiler-toggle show-icon">&nbsp;</div>
+									Click me
+								</div>
+								<div class="spoiler-content" style="display: none;">
+									<p>Hidden text</p>
+									<div class="spoiler">
+										<div class="spoiler-title">
+											<div class="spoiler-toggle hide-icon">&nbsp;</div>
+											Nested spoiler
+										</div>
+										<div class="spoiler-content">
+											<p>Hello world</p>
+										</div>
+									</div>
+									<p>Content</p>
+								</div>
+							</div>
+							<p>&nbsp;</p>
+						</textarea>
+						<br><button id="send" type="button">Submit</button>
+					</div>
+					<div class="col-md-6">
+						<h4>On page</h4>
+						<div class="page">
+							<p>
+								<strong>Spoiler example:</strong>
+							</p>
+							<div class="spoiler">
+								<div class="spoiler-title">
+									<div class="spoiler-toggle show-icon">&nbsp;</div>
+									Click me
+								</div>
+								<div class="spoiler-content" style="display: none;">
+									<p>Hidden text</p>
+									<div class="spoiler">
+										<div class="spoiler-title">
+											<div class="spoiler-toggle hide-icon">&nbsp;</div>
+											Nested spoiler
+										</div>
+										<div class="spoiler-content">
+											<p>Hello world</p>
+										</div>
+									</div>
+									<p>Content</p>
+								</div>
+							</div>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="getting-started">
+				<div class="rows">
+					<div class="col-md-6">
+						<h4>Description</h4>
+						Plugin add spoiler to CKEditor. Testing on CKEditor 4.3.3.
+						<br><br>
+						<h4>Install</h4>
+						<ul>
+							<li>
+								Copy the plugin into the <div class="well well-word">plugins</div> folder of your CKEditor installation:
+								<div class="well well-sm">
+									http://example.com/ckeditor/plugins/spoiler
+								</div>
+							</li>
+							<li>
+								Enable the plugin by using the <div class="well well-word">extraPlugins</div> configuration setting:
+								<div class="well well-sm">
+									config.extraPlugins = 'spoiler';
+								</div>
+							</li>
+							<li>
+								Include javascript and css files in html:
+								<div class="well well-sm">
+									&lt;link rel="stylesheet" href="/css/spoiler.css"&gt;<br>
+									&lt;script src="/js/spoiler.js"&gt;&lt;/script&gt;
+								</div>
+							</li>
+							<li>Enjoy</li>
+						</ul>
+						<br>
+						<h4>Dependencies</h4>
+						<ul>
+							<li>JQuery</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="links">
+				<h4>Links</h4>
+				<ul>
+					<li><a href="http://ckeditor.com/" target="_blank">CKEditor official site</a></li>
+					<li><a href="http://ckeditor.com/" target="_blank">Plugin on official site</a></li>
+					<li><a href="https://github.com/zetamen/ckeditor-spoiler" target="_blank">Plugin on GitHub</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

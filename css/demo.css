@@ -1,0 +1,27 @@
+h4 {
+	color: #666;
+}
+
+a:focus {
+	outline: none;
+}
+
+div.page {
+	width: 100%;
+	height: 352px;
+	border: 1px solid #b6b6b6;
+	overflow: auto;
+	padding: 10px;
+	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+	font-size: 13px;
+	color: #333;
+}
+
+.well {
+	background-image: none;
+}
+
+.well-word {
+	display: inline-block;
+	padding: 0px 4px;
+}
