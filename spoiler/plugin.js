@@ -39,10 +39,10 @@ CKEDITOR.plugins.add( 'spoiler' , {
 		}
 
 		function createSpoiler() {
-			var spoilerContainer = editor.document.createElement( 'div', { attributes: { class: 'spoiler' } } );
-			var spoilerToggle = editor.document.createElement( 'div', { attributes: { class: 'spoiler-toggle hide-icon' } } );
-			var spoilerTitle = editor.document.createElement( 'div', { attributes: { class: 'spoiler-title' } } );
-			var spoilerContent = editor.document.createElement( 'div', { attributes: { class: 'spoiler-content' } } );
+			var spoilerContainer = editor.document.createElement( 'div', { 'attributes' : { 'class': 'spoiler' } } );
+			var spoilerToggle = editor.document.createElement( 'div', { 'attributes' : { 'class': 'spoiler-toggle hide-icon' } } );
+			var spoilerTitle = editor.document.createElement( 'div', { 'attributes' : { 'class': 'spoiler-title' } } );
+			var spoilerContent = editor.document.createElement( 'div', { 'attributes' : { 'class': 'spoiler-content' } } );
 			spoilerToggle.on( 'click', function( event ) {
 				setSwitcher( event.sender );
 			});
