@@ -3,6 +3,8 @@ CKEditor Spoiler
 
 Plugin add spoiler to CKEditor. Testing on CKEditor 4.3.3.
 
+##### [Demo](http://zetamen.github.io/ckeditor-spoiler/)
+
 #### Install
 
  - Copy the plugin into the `plugins` folder of your CKEditor installation:
