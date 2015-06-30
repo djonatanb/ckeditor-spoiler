@@ -26,9 +26,6 @@ div.spoiler div.spoiler-title {
 	background-image: linear-gradient(top, #f5f5f5, #e5e5e5);
 	filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#f5f5f5', endColorstr='#cfd1cf');
 	cursor: pointer;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
 }
 
 div.spoiler div.spoiler-title div.spoiler-toggle {
@@ -40,6 +37,9 @@ div.spoiler div.spoiler-title div.spoiler-toggle {
 	margin-right: 6px;
 	cursor: pointer;
 	-webkit-user-modify: read-only;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
 }
 
 div.spoiler div.spoiler-title div.hide-icon {
